@@ -1,0 +1,158 @@
+%image-property {
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+%d-flex-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+%btn-property {
+    border-radius: 8px;
+    width: 132px;
+    padding: 8px 0;
+    text-align: center;
+}
+
+$font-500-Inter: 500 15px Inter;
+
+* {
+    margin: 0;
+    padding: 0;
+    font-style: normal;
+    box-sizing: border-box;
+}
+
+body {
+    margin: auto;
+    width: 1220px;
+}
+
+header {
+    @extend %d-flex-between;
+
+    .logo {
+        @extend %image-property;
+        background-image: url(./assets/logo.svg);
+        width: 41px;
+        height: 41px;
+    }
+
+    .info {
+        @extend %d-flex-between;
+        gap: 34px;
+
+        p {
+            color: #B8BECD;
+            font: 400 16px Inter;
+
+            &:hover {
+                text-decoration: underline;
+                letter-spacing: 0.01em;
+                font-weight: 500;
+                color: black;
+            }
+        }
+
+        .btn1 {
+            @extend %btn-property;
+            color: #FB8F1D;
+            font: $font-500-Inter;
+            border: 1px solid #FB8F1D;
+
+        }
+
+        .btn2 {
+            @extend %btn-property;
+            color: #FFF;
+            font: $font-500-Inter;
+            background: #FB8F1D;
+        }
+    }
+}
+
+.preview {
+    @extend %d-flex-between;
+
+    .info {
+        h1 {
+            color: #202336;
+            font: 700 64px Playfair Display;
+            margin-top: 114px;
+        }
+
+        p {
+            color: #202336;
+            font: 600 22px Inter;
+            margin-top: 74px;
+        }
+
+        .inputs {
+            display: grid;
+            grid-template-columns: 220px 220px;
+            grid-template-rows: 52px 52px;
+            grid-gap: 30px;
+            margin-top: 71px;
+
+            input {
+                width: 220px;
+                border-radius: 6px;
+                border: 0.8px solid #AFB0B9;
+                color: #4A4C53;
+                font: 400 15px Inter;
+                padding: 21px 121px 21px 31px;
+            }
+        }
+
+        .btn {
+            color: #FFF;
+            font: 700 17px Inter;
+            border-radius: 8px;
+            background: #FB8F1D;
+            width: 180px;
+            margin-top: 47px;
+            padding: 8px 0;
+            text-align: center;
+        }
+    }
+
+    .image1 {
+        @extend %image-property;
+        background-image: url(./assets/thousand-01\ 1.png);
+        width: 506px;
+        height: 483px;
+        margin-top: 133px;
+    }
+}
+
+.description {
+    @extend %d-flex-between;
+    gap: 27px;
+
+    .image2 {
+        @extend %image-property;
+        background-image: url(./assets/Thousand-02\ 1.png);
+        width: 646px;
+        height: 524px;
+        margin-top: 109px;
+    }
+
+    .main_info {
+
+        h3 {
+            color: #000;
+            font: 700 36px Playfair Display;
+            width: 481px;
+        }
+
+        p {
+            color: #7D7987;
+            font: 300 17px Inter;
+            width: 450px;
+            margin-top: 20px;
+        }
+    }
+
+}
