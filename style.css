@@ -1,9 +1,9 @@
-.description .image2, .preview .image1, header .logo {
+footer .left_side .logo, .description .image2, .preview .image1, header .logo {
   background-size: contain;
   background-repeat: no-repeat;
 }
 
-.description, .preview, header .info, header {
+footer, .description, .preview, header .info, header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -20,6 +20,16 @@ header .info .btn2, header .info .btn1 {
   width: 132px;
   padding: 8px 0;
   text-align: center;
+}
+
+footer .interests h3, footer .shop h3, footer .destin h3 {
+  color: #000;
+  font: 700 19px Inter;
+}
+footer .interests p, footer .shop p, footer .destin p {
+  color: #848484;
+  font: 300 18px Inter;
+  margin-top: 10px;
 }
 
 * {
@@ -153,4 +163,25 @@ header .info .btn2 {
   background: #FB8F1D;
   padding: 15px 37px;
   margin-top: 39px;
+}
+
+footer {
+  margin-top: 192px;
+  background: #F9F9FB;
+  padding: 61px 233px 123px;
+  width: 1640px;
+}
+footer .left_side .logo {
+  background-image: url(./assets/logo.svg);
+  width: 44px;
+  height: 38px;
+  margin-bottom: 22px;
+}
+footer .left_side p {
+  color: #848484;
+  font: 300 18px Inter;
+  width: 391px;
+}
+footer .left_side p:not(:last-child) {
+  margin-bottom: 47px;
 }

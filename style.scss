@@ -16,6 +16,19 @@
     text-align: center;
 }
 
+%footer-info {
+    h3 {
+        color: #000;
+        font: 700 19px Inter;
+    }
+
+    p {
+        color: #848484;
+        font: 300 18px Inter;
+        margin-top: 10px;
+    }
+}
+
 $font-500-Inter: 500 15px Inter;
 
 * {
@@ -164,5 +177,44 @@ header {
             margin-top: 39px;
         }
     }
+}
 
+footer {
+    margin-top: 192px;
+    @extend %d-flex-between;
+    background: #F9F9FB;
+    padding: 61px 233px 123px;
+    width: 1640px;
+
+    .left_side {
+        .logo {
+            @extend %image-property;
+            background-image: url(./assets/logo.svg);
+            width: 44px;
+            height: 38px;
+            margin-bottom: 22px;
+        }
+
+        p {
+            color: #848484;
+            font: 300 18px Inter;
+            width: 391px;
+
+            &:not(:last-child) {
+                margin-bottom: 47px;
+            }
+        }
+    }
+
+    .destin {
+        @extend %footer-info;
+    }
+
+    .shop {
+        @extend %footer-info;
+    }
+
+    .interests {
+        @extend %footer-info;
+    }
 }
